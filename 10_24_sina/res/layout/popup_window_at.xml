@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/msg_center_popover_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/msg_center_pop_head_top_bg"
+        android:gravity="center_vertical"
+        android:padding="2dip"
+        android:text=" @我的微博" />
+
+    <Button
+        android:id="@+id/btn_at_wb_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dip"
+        android:background="@drawable/popup_btn_bg"
+        android:focusable="true"
+        android:gravity="left"
+        android:paddingLeft="10dip"
+        android:text="所有人"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_at_wb_friends"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dip"
+        android:background="@drawable/popup_btn_bg"
+        android:gravity="left"
+        android:paddingLeft="10dip"
+        android:text="我关注的人"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_at_wb_original"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dip"
+        android:background="@drawable/popup_btn_bg"
+        android:gravity="left"
+        android:paddingLeft="10dip"
+        android:text="原创微博"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/msg_center_pop_head_top_bg"
+        android:gravity="center_vertical"
+        android:padding="2dip"
+        android:text=" @我的评论" />
+
+    <Button
+        android:id="@+id/btn_at_comment_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dip"
+        android:background="@drawable/popup_btn_bg"
+        android:gravity="left"
+        android:paddingLeft="10dip"
+        android:text="所有人"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_at_comment_friends"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dip"
+        android:background="@drawable/popup_btn_bg"
+        android:gravity="left"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:text="我关注的人"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

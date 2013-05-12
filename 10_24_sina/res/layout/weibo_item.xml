@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <ImageView
+            android:id="@+id/iv_portrait"
+            style="@style/small_portrait" />
+
+        <ImageView
+            android:id="@+id/iv_portrait_round"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/portrait_round_nor" />
+        <ImageView
+            android:id="@+id/iv_portrait_v_blue"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/portrait_v_blue"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/iv_portrait_v_red"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/portrait_v_red"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/iv_portrait_v_yellow"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/portrait_v_yellow"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tv_wb_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sina"
+                android:textColor="@color/wb_username"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_wb_crown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:src="@drawable/crown" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="5dip" >
+
+                <ImageView
+                    android:id="@+id/pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pic" />
+
+                <TextView
+                    android:id="@+id/tv_wb_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_toRightOf="@id/pic"
+                    android:paddingLeft="3dip"
+                    android:text="1小时前"
+                    android:textColor="@color/wb_time"
+                    android:textSize="10dip" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 微博正文部分 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_wb_item_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="微博正文"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/iv_wb_item_content_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/preview_pic_loading" />
+        </LinearLayout>
+        <!-- 微博转发部分 -->
+
+        <LinearLayout
+            android:id="@+id/retweeted_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popup"
+            android:orientation="vertical"
+            android:paddingRight="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_wb_item_subcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="微博转发内容"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_wb_item_subcontent_subpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/preview_pic_loading" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_wb_item_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wb_from"
+                android:textColor="@color/wb_from"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tv_wb_item_from_where"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/wb_from_where"
+                android:text="新浪微博"
+                android:textSize="13sp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_wb_item_redirect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/redirect_icon"
+                    android:text="10"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_wb_item_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:drawableLeft="@drawable/comment_icon"
+                    android:text="10"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/tv_wb_item_attitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:drawableLeft="@drawable/attitude_like3"
+                    android:text="10"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

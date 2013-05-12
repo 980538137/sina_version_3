@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <ImageView
+            android:id="@+id/iv_msg_at_portrait"
+            style="@style/small_portrait" />
+
+        <ImageView
+            android:id="@+id/iv_msg_at_portrait_round"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/portrait_round_nor" />
+
+        <ImageView
+            android:id="@+id/iv_msg_at_portrait_v_blue"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/portrait_v_blue"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_msg_at_portrait_v_red"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/portrait_v_red"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_msg_at_portrait_v_yellow"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/portrait_v_yellow"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tv_msg_at_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sina"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_msg_at_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_msg_at_username"
+                android:layout_marginRight="10dip"
+                android:text="10-18 19:15"
+                android:textColor="@color/wb_time"
+                android:textSize="10dip" />
+        </RelativeLayout>
+
+        <!-- 微博正文部分 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_msg_at_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="微博正文"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/iv_msg_at_content_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/preview_pic_loading" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wb_from"
+                android:textColor="@color/wb_from"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tv_msg_at_from_where"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/wb_from_where"
+                android:text="新浪微博"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

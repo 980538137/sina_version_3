@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2011 Sina.
+ *
+ * Licensed under the Apache License and Weibo License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.open.weibo.com
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+	<string name="attention">注意</string>
+    <string name="delete_all">是否要删除这条微博？</string>
+    <string name="hello">Hello World, TextActivity!</string>
+    <string name="app_name">新浪微博</string>
+    <string name="send">发送</string>
+    <string name="close">关闭</string>
+    <string name="share_dialog_title">新浪微博</string>
+    <string name="please_login">请登录！</string>
+    <string name="send_sucess">分享成功！</string>
+    <string name="send_failed">分享失败！</string>
+    <string name="del_pic">是否删除图片？</string>
+    <string name="tv_username">登录名</string>
+    <string name="tv_password">密码</string>
+    <string name="btn_register">注册</string>
+    <string name="btn_login">登陆</string>
+    <string name="weibo">微博</string>
+    <string name="main_home">首页</string>
+    <string name="main_news">消息</string>
+    <string name="main_my_info">好友</string>
+    <string name="menu_search">广场</string>
+    <string name="more">更多</string>
+    <string name="loading">正在载入...</string>
+    <string name="pull_to_refresh_tap_label">触摸下拉刷新...</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_release_label">释放刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">加载数据...</string>
+    <string name="wb_from">来自:</string>
+    <string name="new_wb">发表新微博</string>
+    <string name="say_something">说点儿什么吧.....</string>
+    <string name="caution">注意</string>
+    <string name="caution_content">你确定要退出吗?</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="orignal_pic">原始图片</string>
+    <string name="wb_detail">微博正文</string>
+    <string name="reload">刷新</string>
+    <string name="comment">评论</string>
+    <string name="forward">转发</string>
+    <string name="favorite">收藏</string>
+    <string name="comment_wb">评论微博</string>
+    <string name="redirect_wb">转发微博</string>
+    <string name="own_homepage">个人主页</string>
+    <string name="search_in_statuses">在全部关注中搜索...</string>
+    <string name="find_friends">找朋友</string>
+</resources>

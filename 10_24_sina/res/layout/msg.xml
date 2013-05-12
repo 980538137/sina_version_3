@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grouplist_title_bg_sel"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_at" />
+
+            <ImageView
+                android:id="@+id/iv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_comment" />
+
+            <ImageView
+                android:id="@+id/iv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_message" />
+
+            <ImageView
+                android:id="@+id/iv_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_notification" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_cursor_monitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title_bar_mark"
+            android:layout_below="@+id/ll_group"
+            android:layout_marginLeft="54dip"/>
+        <ImageView
+            android:id="@+id/iv_cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title_bar_mark"
+            android:layout_below="@+id/ll_group"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 顶部标题 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_bg_nor" >
+
+        <Button
+            android:id="@+id/btn_redirect_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/title_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/redirect_wb"
+            android:textColor="@color/rtwb_text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_redirect_title_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/title_button"
+            android:text="@string/send"
+            android:textColor="@color/white" />
+    </FrameLayout>
+    <!-- 剩余部分 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff8f8f8" 
+        android:layout_weight="1.0">
+
+        <!-- 底部按钮 -->
+
+        <LinearLayout
+            android:id="@+id/btns_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip" 
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/cb_comment_sametime"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" 
+                android:text="同时作为评论发布"
+                android:textColor="#000000"/>
+
+            <ImageButton
+                android:id="@+id/ib_redirect_insert_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:src="@drawable/ib_insert_topic" />
+
+            <ImageButton
+                android:id="@+id/ib_redirect_insert_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:src="@drawable/ib_insert_at" />
+
+            <ImageButton
+                android:id="@+id/ib_redirect_insert_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:src="@drawable/ib_insert_face" />
+        </LinearLayout>
+        <!-- 输入框以下部分 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_mark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btns_bottom"
+            android:layout_marginBottom="10dip" >
+
+            <!-- 字数限制 -->
+
+            <LinearLayout
+                android:id="@+id/ll_redirect_text_limit_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/bg_delwords"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_redirect_text_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0px"
+                    android:text="140"
+                    android:textColor="#ff333333" />
+
+                <ImageView
+                    android:id="@+id/icon_redirect_delwords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_delwords" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 输入框 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/rl_mark" >
+
+            <EditText
+                android:id="@+id/et_redirect_mblog"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3.0px"
+                android:background="@null"
+                android:capitalize="sentences"
+                android:gravity="top|left|center"
+                android:hint="@string/say_something"
+                android:imeOptions="actionDone"
+                android:isScrollContainer="true"
+                android:singleLine="false" />
+        </LinearLayout>
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gv_redirect_emotions"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:background="@color/white"
+        android:columnWidth="40dip"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:scrollbars="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="15dip"
+        android:visibility="gone" />
+
+</LinearLayout>

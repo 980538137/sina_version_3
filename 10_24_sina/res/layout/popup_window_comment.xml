@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/msg_center_popover_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/msg_center_pop_head_top_bg"
+        android:gravity="center_vertical"
+        android:padding="2dip"
+        android:text="收到的评论" />
+
+    <Button
+        android:id="@+id/btn_comment_to_me_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dip"
+        android:paddingLeft="10dip"
+        android:background="@drawable/popup_btn_bg"
+        android:gravity="left"
+        android:text="所有人"
+        android:textColor="#ffffff" 
+        android:focusable="true"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_comment_to_me_friends"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dip"
+        android:paddingLeft="10dip"
+        android:background="@drawable/popup_btn_bg"
+        android:gravity="left"
+        android:text="我关注的人"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/msg_center_pop_head_top_bg"
+        android:gravity="center_vertical"
+        android:padding="2dip"
+        android:text="发出的评论" />
+
+    <Button
+        android:id="@+id/btn_comment_by_me_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dip"
+        android:paddingLeft="10dip"
+        android:background="@drawable/popup_btn_bg"
+        android:gravity="left"
+        android:text="所有人"
+        android:textColor="#ffffff"
+        android:textSize="18sp" 
+        android:layout_marginBottom="5dip"/>
+
+</LinearLayout>
