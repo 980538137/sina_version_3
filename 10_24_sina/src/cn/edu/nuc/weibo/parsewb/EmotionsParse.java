@@ -16,7 +16,7 @@ public class EmotionsParse {
 
 	public EmotionsParse() {
 
-		this.context = WeiboApplication.context;
+		this.context = WeiboApplication.mContext;
 		emotionNames = context.getResources().getStringArray(R.array.defualt_emotions);
 		if (emotionNames.length != IDs.ids.length){
 			throw new IllegalStateException("长度不等");

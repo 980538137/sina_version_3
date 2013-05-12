@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class WeiboApplication extends Application{
 	public static AsyncImageLoader asyncImageLoader = null;
-	public static Context context = null;
+	public static Context mContext = null;
 	public static WeiboParseManager weiboParseManager = null;
 	public static ParseTimeManager parseTimeManager = null;
 	public static Handler handler = null;
@@ -29,8 +29,8 @@ public class WeiboApplication extends Application{
 	public void onCreate() {
 		// TODO Auto-generated method stub
 		super.onCreate();
-		context = this.getApplicationContext();
-		asyncImageLoader = new AsyncImageLoader(context);
+		mContext = this.getApplicationContext();
+		asyncImageLoader = new AsyncImageLoader(mContext);
 		weiboParseManager = new WeiboParseManager();
 		parseTimeManager = new ParseTimeManager();
 		handler = new MyHandler();
